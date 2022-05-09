@@ -80,6 +80,7 @@ SELECT COUNT(ftr) FROM matches WHERE (ftr = 'D') AND (season > 2009 AND season <
 ```sql
 <!-- Copy solution here -->
 SELECT SUM(fthg + ftag), season, division_code FROM matches GROUP BY division_code, season ORDER BY SUM DESC LIMIT 1;
+
 EC
 
 ```
